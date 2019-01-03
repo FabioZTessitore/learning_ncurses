@@ -1,0 +1,5 @@
+*.o
+01_init
+02_curs
+03_addstr
+04_attr
