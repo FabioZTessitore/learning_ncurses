@@ -24,6 +24,11 @@ int main()
   mvaddstr(11, 5, "Hello, NCurses (STANDOUT)");
   attroff(A_STANDOUT);
 
+  /* display only a characcter */
+  mvaddch(15, 5, 'A' | A_BOLD | A_UNDERLINE);
+  mvaddch(16, 5, 'B');
+  mvaddstr(16, 7, "Not affected");
+
   refresh();
   getch();
 
